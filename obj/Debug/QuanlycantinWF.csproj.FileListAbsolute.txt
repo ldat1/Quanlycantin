@@ -1,0 +1,13 @@
+C:\Users\ldat1\source\repos\QuanlycantinWF\bin\Debug\QuanlycantinWF.exe.config
+C:\Users\ldat1\source\repos\QuanlycantinWF\bin\Debug\QuanlycantinWF.exe
+C:\Users\ldat1\source\repos\QuanlycantinWF\bin\Debug\QuanlycantinWF.pdb
+C:\Users\ldat1\source\repos\QuanlycantinWF\obj\Debug\QuanlycantinWF.csproj.AssemblyReference.cache
+C:\Users\ldat1\source\repos\QuanlycantinWF\obj\Debug\QuanlycantinWF.Properties.Resources.resources
+C:\Users\ldat1\source\repos\QuanlycantinWF\obj\Debug\QuanlycantinWF.csproj.GenerateResource.cache
+C:\Users\ldat1\source\repos\QuanlycantinWF\obj\Debug\QuanlycantinWF.csproj.CoreCompileInputs.cache
+C:\Users\ldat1\source\repos\QuanlycantinWF\obj\Debug\QuanlycantinWF.exe
+C:\Users\ldat1\source\repos\QuanlycantinWF\obj\Debug\QuanlycantinWF.pdb
+C:\Users\ldat1\source\repos\QuanlycantinWF\obj\Debug\QuanlycantinWF.tbLogin.resources
+C:\Users\ldat1\source\repos\QuanlycantinWF\obj\Debug\QuanlycantinWF.fTableAdmin.resources
+C:\Users\ldat1\source\repos\QuanlycantinWF\obj\Debug\QuanlycantinWF.fAccountProfile.resources
+C:\Users\ldat1\source\repos\QuanlycantinWF\obj\Debug\QuanlycantinWF.fAdmin.resources
