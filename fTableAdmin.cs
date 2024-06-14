@@ -13,6 +13,7 @@ using System.Windows.Forms;
 using QuanlycantinWF.DAO;
 using QuanlycantinWF.DTO;
 
+
 namespace QuanlycantinWF
 {
     public partial class fTableAdmin : Form
@@ -151,11 +152,36 @@ namespace QuanlycantinWF
         private void adminToolStripMenuItem_Click(object sender, EventArgs e)
         {
             fAdmin f = new fAdmin();
+            f.Insertfood += f_Insertfood;
+            f.Deletefood += f_Deletefood;
+            f.Updatefood += f_Updatefood;
             f.LoginAccount = loginAccount;
             f.ShowDialog();
         }
 
-        private void cbFood_SelectedIndexChanged(object sender, EventArgs e)
+        private void f_Updatefood(object sender, EventArgs e)
+        {
+            LoadFoodListByCategoryID((cbCategory.SelectedItem as Category).Id);
+            if (lsvBill.Tag != null)
+                ShowBill((lsvBill.Tag as Table).ID);
+        }
+
+        private void f_Deletefood(object sender, EventArgs e)
+        {
+            LoadFoodListByCategoryID((cbCategory.SelectedItem as Category).Id);
+            if (lsvBill.Tag != null)
+                ShowBill((lsvBill.Tag as Table).ID);
+            LoadTable();
+        }
+
+        private void f_Insertfood(object sender, EventArgs e)
+        {
+            LoadFoodListByCategoryID((cbCategory.SelectedItem as Category).Id);
+            if (lsvBill.Tag != null)
+                ShowBill((lsvBill.Tag as Table).ID);
+        }
+
+       /* private void cbFood_SelectedIndexChanged(object sender, EventArgs e)
         {
 
             int id = 0;
@@ -169,11 +195,17 @@ namespace QuanlycantinWF
             id = selected.Id;
 
             LoadFoodListByCategoryID(id);
-        }
+        }*/
 
         private void btADDFOOD_Click(object sender, EventArgs e)
         {
             Table table = lsvBill.Tag as Table;
+
+            if(table == null)
+            {
+                MessageBox.Show("Hãy chọn bàn");
+                return;
+            }
 
             int idbill = BillDAO.Instance.GetUncheckBillIDByTableID(table.ID);
 
@@ -232,6 +264,7 @@ namespace QuanlycantinWF
            
         }
 
+       
         #endregion 
 
 

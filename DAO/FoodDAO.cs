@@ -26,7 +26,7 @@ namespace QuanlycantinWF.DAO
         {
             List<Food>list = new List<Food>();
 
-            string query = " select * from food where idcategory = " + id;
+            string query = "select * from food where idcategory = " + id;
 
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 

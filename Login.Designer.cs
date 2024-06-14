@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tbLogin));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
@@ -49,14 +50,14 @@
             this.panel1.Location = new System.Drawing.Point(13, 13);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(665, 181);
+            this.panel1.Size = new System.Drawing.Size(533, 181);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnLogin
             // 
             this.btnLogin.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(235, 125);
+            this.btnLogin.Location = new System.Drawing.Point(196, 125);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(141, 32);
             this.btnLogin.TabIndex = 3;
@@ -68,7 +69,7 @@
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(420, 125);
+            this.btnExit.Location = new System.Drawing.Point(388, 125);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(107, 32);
             this.btnExit.TabIndex = 4;
@@ -80,9 +81,8 @@
             // 
             this.txbPassword.Location = new System.Drawing.Point(196, 78);
             this.txbPassword.Name = "txbPassword";
-            this.txbPassword.Size = new System.Drawing.Size(376, 30);
+            this.txbPassword.Size = new System.Drawing.Size(299, 30);
             this.txbPassword.TabIndex = 2;
-            this.txbPassword.Text = "dat123";
             this.txbPassword.UseSystemPasswordChar = true;
             // 
             // label1
@@ -100,9 +100,8 @@
             // 
             this.txbusername.Location = new System.Drawing.Point(196, 20);
             this.txbusername.Name = "txbusername";
-            this.txbusername.Size = new System.Drawing.Size(376, 30);
+            this.txbusername.Size = new System.Drawing.Size(299, 30);
             this.txbusername.TabIndex = 1;
-            this.txbusername.Text = "dat";
             this.txbusername.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // tên
@@ -121,8 +120,10 @@
             this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(691, 208);
+            this.ClientSize = new System.Drawing.Size(931, 422);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);

@@ -219,6 +219,8 @@ namespace QuanlycantinWF
 
         private void btnAddfood_Click(object sender, EventArgs e)
         {
+
+            
             string name = tbxFoodname.Text;
             int categoryID = (cbFoodCategory.SelectedItem as Category).Id;
             float price = (float)nmFoodPrice.Value;
@@ -227,6 +229,9 @@ namespace QuanlycantinWF
             {
                 MessageBox.Show("Thêm món thành công");
                 LoadListFood();
+                if (insertfood != null)
+                    insertfood(this, new EventArgs());
+                
             }
             else
             {
@@ -234,15 +239,9 @@ namespace QuanlycantinWF
             }
         }
 
-        private void btnSearchfood_Click(object sender, EventArgs e)
-        {
-            SearchFoodByName(txbSearchFoodname.Text); 
-        }
+       
 
-
-        #endregion
-
-        private void tbxidfood_TextChanged(object sender, EventArgs e)
+       private void tbxidfood_TextChanged(object sender, EventArgs e)
         {
             if (dtgvFood.SelectedCells.Count > 0)
             {
@@ -274,12 +273,14 @@ namespace QuanlycantinWF
 
             if (FoodDAO.Instance.DeleteFood(id))
             {
-                MessageBox.Show("Sửa món thành công");
+                MessageBox.Show(" Xóa món thành công");
                 LoadListFood();
+                if (deletefood != null)
+                    deletefood(this, new EventArgs());
             }
             else
             {
-                MessageBox.Show("Sửa món ăn thất bại !");
+                MessageBox.Show("Xóa món thất bại !");
             }
         }
 
@@ -294,11 +295,38 @@ namespace QuanlycantinWF
             {
                 MessageBox.Show("Sửa món thành công");
                 LoadListFood();
+                if(updatefood != null)
+                    updatefood(this, new EventArgs());  
             }
             else
             {
                 MessageBox.Show("Sửa món ăn thất bại !");
             }
         }
+
+        private event EventHandler insertfood;
+        public event EventHandler Insertfood
+        {
+            add { insertfood += value; }
+            remove { insertfood -= value; }
+        }
+        private event EventHandler deletefood;
+        public event EventHandler Deletefood
+        {
+            add { deletefood += value; }
+            remove { deletefood -= value; }
+        }
+        private event EventHandler updatefood;
+        public event EventHandler Updatefood
+        {
+            add { updatefood += value; }
+            remove { updatefood -= value; }
+        }
+
+
+
+        #endregion
+
+
     }
 }

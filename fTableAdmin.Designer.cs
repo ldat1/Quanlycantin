@@ -42,10 +42,6 @@
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel3 = new System.Windows.Forms.Panel();
             this.txbTotalPrice = new System.Windows.Forms.TextBox();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.btnswitch = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.btnCheckout = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.nmFoodCount = new System.Windows.Forms.NumericUpDown();
@@ -56,7 +52,6 @@
             this.menuStrip2.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmFoodCount)).BeginInit();
             this.SuspendLayout();
@@ -102,14 +97,14 @@
             // thôngTinCáToolStripMenuItem
             // 
             this.thôngTinCáToolStripMenuItem.Name = "thôngTinCáToolStripMenuItem";
-            this.thôngTinCáToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.thôngTinCáToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
             this.thôngTinCáToolStripMenuItem.Text = "Thông tin cá nhân";
             this.thôngTinCáToolStripMenuItem.Click += new System.EventHandler(this.thôngTinCáToolStripMenuItem_Click);
             // 
             // đăngXuấtToolStripMenuItem
             // 
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
             this.đăngXuấtToolStripMenuItem.Text = "Đăng xuất ";
             this.đăngXuấtToolStripMenuItem.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
             // 
@@ -160,10 +155,6 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.txbTotalPrice);
-            this.panel3.Controls.Add(this.numericUpDown3);
-            this.panel3.Controls.Add(this.comboBox3);
-            this.panel3.Controls.Add(this.btnswitch);
-            this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.btnCheckout);
             this.panel3.Location = new System.Drawing.Point(457, 374);
             this.panel3.Name = "panel3";
@@ -181,49 +172,6 @@
             this.txbTotalPrice.TabIndex = 6;
             this.txbTotalPrice.Text = "0";
             this.txbTotalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // numericUpDown3
-            // 
-            this.numericUpDown3.Location = new System.Drawing.Point(114, 39);
-            this.numericUpDown3.Minimum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(89, 22);
-            this.numericUpDown3.TabIndex = 5;
-            this.numericUpDown3.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(3, 39);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(105, 24);
-            this.comboBox3.TabIndex = 4;
-            // 
-            // btnswitch
-            // 
-            this.btnswitch.Location = new System.Drawing.Point(3, 3);
-            this.btnswitch.Name = "btnswitch";
-            this.btnswitch.Size = new System.Drawing.Size(105, 30);
-            this.btnswitch.TabIndex = 5;
-            this.btnswitch.Text = "Chuyển bàn ";
-            this.btnswitch.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(114, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(89, 30);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Giảm giá";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // btnCheckout
             // 
@@ -280,7 +228,6 @@
             this.cbFood.Name = "cbFood";
             this.cbFood.Size = new System.Drawing.Size(254, 24);
             this.cbFood.TabIndex = 1;
-            this.cbFood.SelectedIndexChanged += new System.EventHandler(this.cbFood_SelectedIndexChanged);
             // 
             // cbCategory
             // 
@@ -319,7 +266,6 @@
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.nmFoodCount)).EndInit();
             this.ResumeLayout(false);
@@ -342,11 +288,7 @@
         private System.Windows.Forms.NumericUpDown nmFoodCount;
         private System.Windows.Forms.Button btADDFOOD;
         private System.Windows.Forms.ComboBox cbFood;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnCheckout;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Button btnswitch;
         private System.Windows.Forms.FlowLayoutPanel flpTable;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;

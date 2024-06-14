@@ -122,6 +122,7 @@
             this.txbpassword.Name = "txbpassword";
             this.txbpassword.Size = new System.Drawing.Size(291, 28);
             this.txbpassword.TabIndex = 3;
+            this.txbpassword.UseSystemPasswordChar = true;
             // 
             // label2
             // 
@@ -149,6 +150,7 @@
             this.txbnewpassword.Name = "txbnewpassword";
             this.txbnewpassword.Size = new System.Drawing.Size(291, 28);
             this.txbnewpassword.TabIndex = 4;
+            this.txbnewpassword.UseSystemPasswordChar = true;
             // 
             // label3
             // 
@@ -176,6 +178,7 @@
             this.txbremakepassword.Name = "txbremakepassword";
             this.txbremakepassword.Size = new System.Drawing.Size(291, 28);
             this.txbremakepassword.TabIndex = 5;
+            this.txbremakepassword.UseSystemPasswordChar = true;
             // 
             // label5
             // 
